@@ -1,14 +1,21 @@
 {
   "name": "zfl-14-home-repair",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 5114",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0 --port 6114"
+    "preview": "vite preview --host 0.0.0.0 --port 6114",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "playwright test",
+    "e2e:report": "playwright show-report"
   },
   "devDependencies": {
-    "vite": "^6.3.5"
+    "@playwright/test": "^1.48.2",
+    "jsdom": "^25.0.1",
+    "vite": "^6.3.5",
+    "vitest": "^2.1.5"
   }
 }

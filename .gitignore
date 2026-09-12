@@ -1,6 +1,11 @@
 node_modules/
 dist/
 .vite/
+test-results/
+playwright-report/
+.playwright-libs/debs/
+.playwright-libs/root/
+playwright/.cache/
 
 .env
 .env.*
